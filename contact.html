@@ -1,0 +1,121 @@
+<!-- 
+Ryan Ogden
+c0964286
+12/02/2025
+Index Page
+-->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <html lang="en"> 
+    <title>Electric Can Openers: Home Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="32x32" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+    <link rel="icon" sizes="192x192" href="images/favicon.png">
+</head>
+
+<body>
+    <div id="container">
+    <!--Use the header area for the website name or logo-->
+        <header>
+            <h1>Electric Can Openers</h1>
+            <a href="index.html"><img src="images/can-wizard.png" alt="Swift Can Wizard Logo" id="logo" height="220" width="297"></a>
+        </header>
+    <!--Use the nav area to add hyperlinks to other pages within the website-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    <!--Use the main area to add the main content of the web page-->
+        <main>
+        <div id="form">
+            <h2>Complete the form below to contact us.</h2>
+            <form class="form-grid"> <!-- Start form -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" placeholder="First name only" required autofocus>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" placeholder="Last name only" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="(xxx)xxx-xxxx" required maxlength="13" size="13">
+
+                    <label for="dop">Date of Purchase</label>
+                    <input id="dop" name="dop" type="date" placeholder="mm/dd/yyyy">
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <p>I would like to contact you about</p>
+
+                    <label for="warrenty"><input type="checkbox" name="interest" id="warrenty" value="Warrenty">Warrenty</label>
+
+                    <label for="pricing"><input type="checkbox" name="interest" id="pricing" value="Pricing">Pricing</label>
+
+                    <label for="upgrade"><input type="checkbox" name="interest" id="upgrade" value="Upgrading Product">Upgrading Product</label>
+
+                    <label for="complaint"><input type="checkbox" name="interest" id="complaint" value="Complaint">Complaint</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Survey</legend>
+                    <label for="reference">How did you hear about our product?</label>
+                    <select name="reference" id="reference">
+                        <option value="ad">Advertisement</option>
+                        <option value="friend">Friend</option>
+                        <option value="google">Google</option>
+                        <option value="social">Social Media</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="questions">Questions?</label>
+                    <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+
+                    <label for="times">When would you prefer to be contacted?</label>
+                    <div class="window">
+                    <label for="first">8am-11am</label> 
+                    <input id="first" name="window" type="radio">
+
+                    <label for="second">11am-2pm</label> 
+                    <input id="second" name="window" type="radio">
+
+                    <label for="third">2pm-5pm</label> 
+                    <input id="third" name="window" type="radio">
+
+                    <label for="fourth">5pm-8pm</label> 
+                    <input id="fourth" name="window" type="radio">
+                </div>
+                </fieldset>
+                
+                <input type="submit" id="submit" value="submit" class="btn">
+                <input type="reset" id="reset" value="reset" class="btn">
+
+            </form>
+        </div>
+        </main>
+    <!--Use the footer area to add webpage footer content-->
+        <footer>     
+            <p>&copy; Copyright 2099. All Rights Reserved.<br> 
+                <a href="mailto:email.here@bingus.org">Request information</a> <br>Ryan Ogden &nbsp; &nbsp; c0964286 </p> 
+        </footer>
+    </div>
+</body>
+</html>
